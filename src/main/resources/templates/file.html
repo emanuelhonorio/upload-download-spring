@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/file.css}">
+</head>
+<body>
+    <input type="file" name="file">
+    <button id="upload">Submit</button>
+    
+    <div id="response">
+        <div>
+            Nome: <span id="fileName"></span>
+        </div>
+        <div>
+            Download: <a id="downloadUri" href=""></a>
+        </div>
+        <div>
+            fileType: <span id="fileType"></span>
+        </div>
+        <div>
+            Size: <span id="fileSize"></span>
+        </div>
+        <div>
+            <img src="" id="fileImg">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script th:src="@{/js/file.js}"></script>
+</body>
+</html>
